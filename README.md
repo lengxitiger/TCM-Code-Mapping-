@@ -90,3 +90,72 @@
 ## ⚠️ 免责声明 (Disclaimer)
 **「本表仅供技术联想与趣味学习，实际开发请遵循科学工程原则」**  
 *"This table is for creative learning only - real coding requires engineering rigor"*
+--------------------------------------------------------------------------------------------------------
+
+# 🌟 五行五脏阴阳 · 编程架构隐喻对照表 (Five Elements & Organs · Programming Architecture Metaphors)
+
+> **"五行生克藏大道，代码架构显乾坤"**  
+> *"The Five Elements' harmony mirrors the balance of robust code architecture"*
+
+---
+
+## 📜 核心映射表 (Core Mapping Table)
+
+| 五行五脏阴阳 (Five Elements & Organs) | 极客解释 (Geek Interpretation)                     | 代码架构示例 (Architectural Example)               | 英文对照 (English Version)                                                                 |
+|---------------------------------------|--------------------------------------------------|------------------------------------------------|-------------------------------------------------------------------------------------------|
+| **木（肝）- 生发之气**<br>**Wood (Liver) - Vitality of Growth** | 创新模块/前端界面<br>**Innovative modules/Frontend interfaces** | React组件树（灵活扩展）<br>**React component tree (flexible expansion)** | **Wood (Liver)**: Dynamic growth modules (like React components) - `ComponentTree.jsx → props drilling like liver qi flow` |
+| **火（心）- 阳气核心**<br>**Fire (Heart) - Yang Core** | 核心业务逻辑/计算引擎<br>**Core business logic/Compute engine** | 微服务中的订单处理中心<br>**Order processing microservice** | **Fire (Heart)**: Central logic unit (like order service) - `OrderService.java → transactional heat like heart fire` |
+| **土（脾）- 运化之基**<br>**Earth (Spleen) - Foundation of Transformation** | 数据库/中间件层<br>**Database/Middleware layer** | MySQL主从集群+Redis缓存<br>**MySQL cluster + Redis cache** | **Earth (Spleen)**: Data foundation (like MySQL) - `DBSchema.sql → nutrient storage like spleen qi` |
+| **金（肺）- 收敛肃降**<br>**Metal (Lung) - Descending Regulation** | 安全防护/日志审计<br>**Security/Logging & Audit** | JWT鉴权+操作日志记录<br>**JWT auth + operation logging** | **Metal (Lung)**: Security & compliance (like JWT) - `AuthMiddleware.js → filtering airflow like lung qi` |
+| **水（肾）- 滋养潜藏**<br>**Water (Kidney) - Nourishing Reserve** | 缓存系统/配置中心<br>**Cache system/Configuration center** | Redis集群+Apollo配置<br>**Redis cluster + Apollo config** | **Water (Kidney)**: Resource reservoir (like Redis) - `CacheManager.js → deep storage like kidney essence` |
+
+---
+
+## ⚖️ 阴阳平衡法则 (Yin-Yang Balance Principles)
+
+| 中医阴阳 (TCM Yin-Yang) | 编程架构隐喻 (Architectural Metaphor)               | 实战案例 (Real-World Example)                     | 英文对照 (English Version)                                                                 |
+|-----------------------|--------------------------------------------------|------------------------------------------------|-------------------------------------------------------------------------------------------|
+| **阴（守/藏）**<br>**Yin (Conservation)** | 稳定层：数据库/基础服务<br>**Stable layers: DB/Foundation services** | PostgreSQL主库+备份节点<br>**PostgreSQL primary + replicas** | **Yin (Conservation)**: Stable infrastructure (like DB) - `PrimaryDB → enduring storage like yin essence` |
+| **阳（动/发）**<br>**Yang (Activity)** | 动态层：API网关/实时计算<br>**Dynamic layers: API Gateway/Real-time compute** | Kubernetes集群+流处理<br>**K8s cluster + Flink jobs** | **Yang (Activity)**: Dynamic components (like K8s) - `FlinkJob → pulsating energy like yang qi` |
+| **阴阳失衡警告**<br>**Yin-Yang Imbalance Alert** | 高并发时CPU飙高（阳亢）<br>**High CPU on traffic spikes (excessive yang)** | 双十一秒杀活动宕机<br>**Double 11 flash sale crash** | **Imbalance Warning**: Overloaded yang (CPU) without yin (cooling) - `503 Error → yang excess burns out system` |
+
+---
+
+## 🔗 五行生克编程实践 (Five Elements Interaction in Code)
+
+| 生克关系 (Elemental Interaction) | 架构设计应用 (Architectural Application)          | 代码示例 (Code Example)                     | 英文对照 (English Version)                                                                 |
+|--------------------------------|------------------------------------------------|--------------------------------------------|-------------------------------------------------------------------------------------------|
+| **木生火**<br>**Wood Generates Fire** | 前端交互驱动业务逻辑<br>**Frontend interactions trigger core logic** | React按钮点击→调用订单API<br>**Button click → OrderService call** | **Wood → Fire**: UI actions generate business processes - `onClick → API request → business execution` |
+| **火生土**<br>**Fire Generates Earth** | 业务数据沉淀到存储层<br>**Processed data persists to storage** | 订单完成→写入MySQL+日志<br>**Order completed → DB write + log** | **Fire → Earth**: Core logic results stored in foundation - `Order saved → Data materialized in DB` |
+| **土生金**<br>**Earth Generates Metal** | 数据支撑安全决策<br>**Storage feeds security policies** | 用户行为日志→风控模型<br>**User logs → Risk control model** | **Earth → Metal**: Data informs protection mechanisms - `Logs analyzed → Security rules applied` |
+| **金生水**<br>**Metal Generates Water** | 安全策略优化资源配置<br>**Security guides resource allocation** | 权限分级→缓存策略调整<br>**RBAC → Cache tiering** | **Metal → Water**: Protection rules refine resource management - `Access tiers → Optimized caching` |
+| **水生木**<br>**Water Generates Wood** | 资源滋养前端创新<br>**Resources enable frontend evolution** | Redis加速→React动画流畅<br>**Fast cache → Smooth UI animations** | **Water → Wood**: Stored resources empower dynamic modules - `Cached data → Responsive frontend` |
+| **木克土**<br>**Wood Controls Earth** | 前端请求压垮数据库<br>**Excessive API calls overload DB** | 爬虫高频查询→MySQL崩溃<br>**Crawler spam → DB failure** | **Wood → Earth**: Dynamic modules strain stable layers - `API flood → DB deadlock` |
+| **土克水**<br>**Earth Controls Water** | 数据库锁阻塞缓存更新<br>**DB locks hinder cache refresh** | 长事务→Redis脏读<br>**Long transaction → Dirty cache reads** | **Earth → Water**: Stable layers constrain resource flow - `DB lock → Cache inconsistency` |
+| **水克火**<br>**Water Controls Fire** | 缓存失效引发计算风暴<br>**Cache miss triggers compute surge** | Redis宕机→订单服务暴增CPU<br>**Redis down → OrderService CPU spike** | **Water → Fire**: Resource depletion overloads core logic - `Cache miss → Logic overload` |
+| **火克金**<br>**Fire Controls Metal** | 业务逻辑绕过安全校验<br>**Core logic bypasses security** | 管理员API直删用户→无鉴权<br>**Admin API → No auth check** | **Fire → Metal**: Core processes override protection - `Direct delete → Security bypass` |
+| **金克木**<br>**Metal Controls Wood** | 权限管控限制前端功能<br>**Access control restricts UI features** | 普通用户看不到管理按钮<br>**Regular user → No admin UI** | **Metal → Wood**: Protection rules constrain dynamic modules - `RBAC → Limited frontend options` |
+
+---
+
+## 💡 架构设计启示 (Architectural Insights)
+
+### 🌟 中医智慧映射 (TCM Wisdom Applied)
+1. **木（创新）需土（数据）滋养**：前端组件依赖数据库提供的动态内容  
+   *Innovative modules (Wood) need data foundation (Earth) - React needs DB-driven content*  
+2. **火（核心）与水（缓存）平衡**：计算引擎需配合Redis避免重复运算  
+   *Core logic (Fire) balances with caching (Water) - Avoid redundant compute with Redis*  
+3. **金（安全）克木（前端）的边界**：JWT鉴权保护API但不过度限制用户体验  
+   *Security (Metal) constrains frontend (Wood) - Auth protects without hurting UX*  
+
+### ⚠️ 阴阳失衡预警 (Yin-Yang Imbalance Alerts)
+- **阳亢（CPU 90%+）**：业务逻辑层（火）过载需增加缓存（水）或限流（金）  
+  *Excessive yang (High CPU) → Add caching (Water) or rate-limiting (Metal)*  
+- **阴虚（响应延迟）**：基础服务（土）性能不足需优化数据库索引（土生金）  
+  *Yin deficiency (Slow response) → Optimize DB indexes (Earth → Metal)*  
+
+---
+
+## 🛡️ 免责声明 (Disclaimer)
+**「本表为技术隐喻对照，非中医诊疗方案或架构标准——阴阳平衡之道，存乎一心」**  
+*"This is a metaphorical guide, not medical advice or architectural doctrine - balance depends on your wisdom"*
