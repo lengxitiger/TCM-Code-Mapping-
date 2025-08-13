@@ -30,6 +30,79 @@
 | Clear Heat and Detoxify (清热解毒) | GC Tuning (垃圾回收调优)                     | `gc.collect(中医模式=True)`      |
 | Monarch-Minister-Assistant-Envoy (君臣佐使) | Microservice Call Chain (微服务调用链)         | `AngelicaService.call(AstragalusService)` |
 
+
+# 🌿 传统中医术语 × 极客黑话双语对照表 (TCM Terms × Hacker Slang)
+
+> **"悬壶济世的代码版：当银针遇上键盘，望闻问切变成 Git 提交"**  
+> *"The coding version of healing arts: Where acupuncture meets keyboards, and diagnosis turns into Git commits"*
+
+---
+
+## 📜 核心对照表 (Core Comparison Table)
+
+| 传统术语 (Traditional TCM Term) | 极客黑话 (Hacker Slang)               | 应用场景 (Use Case)                     | 英文对照 (English Version)                                                                 |
+|-------------------------------|--------------------------------------|----------------------------------------|-------------------------------------------------------------------------------------------|
+| **把脉**<br>**Feel the Pulse** | `kubectl describe pod`<br>**诊断服务健康状态** | 通过 Kubernetes 命令查看 Pod 状态，快速定位服务异常 | **Feel the Pulse**<br>`kubectl describe pod` → Diagnose service health status by inspecting Pod details |
+| **开方**<br>**Write the Prescription** | `git commit -m "方剂"`<br>**提交修复方案** | 用 Git 提交代码修复，将解决方案封装为「处方」 | **Write the Prescription**<br>`git commit -m "Prescription"` → Commit code fixes as a 'prescription' |
+| **十八反**<br>**Eighteen Contradictions** | **CI/CD 禁忌规则**<br>**CI/CD Taboo Rules** | 禁止 Python 和 Java 直接调用等高危架构组合 | **Eighteen Contradictions**<br>CI/CD forbidden rules → Block high-risk architecture combos (e.g., Python ↔ Java direct calls) |
+| **君臣佐使**<br>**Monarch-Minister-Assistant-Envoy** | **微服务调用链**<br>**Microservice Call Chain** | 主服务（君）调用辅助服务（臣/佐/使）完成业务逻辑 | **Monarch-Minister-Assistant-Envoy**<br>Microservice hierarchy → Primary service (Monarch) orchestrates supporting services (Ministers/Assistants/Envoys) |
+| **四诊合参**<br>**Four Diagnostic Methods** | **日志+监控+链路追踪+告警**<br>**Logs + Metrics + Tracing + Alerts** | 综合多维度数据定位复杂问题（如性能瓶颈/内存泄漏） | **Four Diagnostic Methods**<br>Multi-source analysis → Combine logs, metrics, tracing, and alerts to diagnose complex issues |
+| **以毒攻毒**<br>**Fight Poison with Poison** | **混沌工程注入故障**<br>**Chaos Engineering Fault Injection** | 故意制造异常（如延迟/错误）测试系统容错能力 | **Fight Poison with Poison**<br>Chaos testing → Intentionally inject faults (e.g., latency/errors) to validate resilience |
+| **扶正祛邪**<br>**Support Righteousness, Expel Evil** | **加固安全+清理技术债务**<br>**Security Hardening + Tech Debt Cleanup** | 通过权限管控（扶正）和重构冗余代码（祛邪）提升系统健康度 | **Support Righteousness, Expel Evil**<br>System optimization → Strengthen security (Support) and remove redundant code (Expel) |
+
+---
+
+## 🎯 核心映射逻辑 (Core Mapping Logic)
+
+### 中医术语 → 极客黑话 (TCM Concepts → Hacker Slang)
+1. **把脉 → kubectl describe pod**  
+   *传统「切脉」诊断气血 → 现代「查看 Pod 详情」诊断服务状态*  
+   *Traditional 'pulse diagnosis' → Modern 'Pod inspection' for service health*
+
+2. **开方 → git commit -m "方剂"**  
+   *中医开具药方 → 开发者提交代码修复方案*  
+   *TCM prescription → Developer's code fix commit*
+
+3. **十八反 → CI/CD 禁忌规则**  
+   *中药配伍禁忌 → 架构设计中的高危组合限制*  
+   *Herbal incompatibilities → High-risk architecture restrictions in CI/CD*
+
+4. **君臣佐使 → 微服务调用链**  
+   *主药引领辅药 → 主服务协调从属服务完成业务*  
+   *Primary herb leads assistants → Primary service orchestrates supporting services*
+
+### 应用场景扩展 (Extended Use Cases)
+- **四诊合参**：当线上服务出现 5xx 错误时，同时检查 **日志（望）**、**监控指标（闻）**、**分布式追踪（问）** 和 **告警通知（切）**，定位根因。  
+  *When 5xx errors occur, analyze **logs (observation)**, **metrics (listening)**, **tracing (inquiry)**, and **alerts (pulse-taking)** to find the root cause.*  
+- **以毒攻毒**：通过 **混沌工程** 故意制造网络延迟或服务宕机，验证熔断降级策略的有效性。  
+  *Use **chaos engineering** to inject network latency/service crashes, testing circuit breaker strategies.*  
+- **扶正祛邪**：定期 **清理无用依赖（祛邪）** 并 **升级基础组件（扶正）**，维持系统长期健康。  
+  *Regularly **remove unused dependencies (expel evil)** and **upgrade core components (support righteousness)**.*
+
+---
+
+## 💡 使用场景 (When to Use This Table)
+
+### 🛠️ 开发阶段 (Development)
+- **模块设计**：参考「君臣佐使」设计微服务层级，避免循环依赖（十八反）。  
+  *Design microservices with 'Monarch-Minister-Assistant-Envoy' to avoid circular dependencies ('Eighteen Contradictions')*  
+- **提交规范**：用「开方」思维撰写清晰的 commit message（如 `git commit -m "修复支付接口超时方剂"`）。  
+  *Write clear commits with 'prescription' mindset (e.g., `Fix payment API timeout prescription`)*  
+
+### 🧠 学习阶段 (Learning)
+- **理解架构**：通过「把脉」类比掌握 Kubernetes 排障技巧，用「四诊合参」学习全链路监控。  
+  *Learn Kubernetes troubleshooting via 'pulse diagnosis' analogy, and full-link monitoring with 'four diagnostic methods'*  
+- **记忆要点**：用中医黑话联想复杂概念（如「以毒攻毒=混沌工程」「扶正祛邪=安全加固」）。  
+  *Memorize key concepts by linking TCM slang to tech terms (e.g., 'Fight Poison=Chaos Engineering', 'Support Righteousness=Security Hardening')*
+
+---
+
+## ⚠️ 免责声明 (Disclaimer)
+**「本表仅供技术联想与趣味学习，实际开发请遵循科学工程原则——悬壶济世，代码亦然」**  
+*"This table is for creative learning only - real coding requires engineering rigor, just like healing requires medical ethics"*
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
 # 🌿 中药七情 · 编程隐喻对照表 (Herbal Seven Emotions · Programming Metaphors)
 
 > **"中药配伍有七情，代码协作藏玄机"**  
