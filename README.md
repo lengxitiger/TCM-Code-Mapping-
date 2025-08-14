@@ -286,3 +286,6 @@
 ## 🛡️ 免责声明 (Disclaimer)
 **「本表为技术隐喻对照，非中医诊疗方案或架构标准——阴阳平衡之道，存乎一心」**  
 *"This is a metaphorical guide, not medical advice or architectural doctrine - balance depends on your wisdom"*
+
+「本人才疏学浅，只是ERP界野生非科班码农，术语仅供参考」
+「I am merely an amateur coder in the ERP field, without any formal training. The terms used are for reference only」
